@@ -36,7 +36,7 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     private EditText number, month, year, cvc, name;
-    private String KEY = "pk_test_5Mc1Ed2IGKe7TLEsdzo0mAYz00lzvTosTa";
+    private String KEY = "Your Key";
     private Button pay;
     private CardMultilineWidget cardMultilineWidget;
     boolean lenNumber = false, lenMonth = false, lenYear = false, lenCVC = false,lenName=false;
