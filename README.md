@@ -4,8 +4,8 @@ Stripe Implimentation In Android
 Permission:
 uses-permission android:name="android.permission.INTERNET"
 
-Implementation:
-'com.stripe:stripe-android:9.2.0'
+Dependency:
+implementation 'com.stripe:stripe-android:9.2.0'
 
 Publishing Key:
 Create an account on www.stripe.com to get publishing key
