@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_payment_card"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:text="Customer Name"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/card_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="John Doe"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:imeOptions="actionNext"
+            android:textColor="#FFF"
+            android:textColorHint="#9FFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="Card Number"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/credit"
+            android:hint="4242-4242-4242-4242"
+            android:inputType="phone"
+            android:imeOptions="actionNext"
+            android:maxLength="19"
+            android:textColor="#FFF"
+            android:textColorHint="#9FFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Month"
+                        android:paddingRight="15dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF" />
+
+                    <EditText
+                        android:id="@+id/month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/credit"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:hint="MM"
+                        android:paddingRight="15dp"
+                        android:inputType="phone"
+                        android:maxLength="2"
+                        android:textColor="#FFF"
+                        android:textColorHint="#9FFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Year"
+                        android:textSize="18sp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textColor="#FFF" />
+                    <EditText
+                        android:id="@+id/year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/credit"
+                        android:gravity="center"
+                        android:hint="YY"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#FFF"
+                        android:textColorHint="#9FFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="CVC/CVV"
+                    android:textSize="18sp"
+                    android:textColor="#FFF" />
+
+                <EditText
+                    android:id="@+id/cvc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:fontFamily="@font/credit"
+                    android:gravity="center"
+                    android:hint="123"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="3"
+                    android:textColor="#FFF"
+                    android:textColorHint="#9FFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- <com.stripe.android.view.CardMultilineWidget
+         android:id="@+id/widget"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+     </com.stripe.android.view.CardMultilineWidget>-->
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Pay" />
+
+
+</LinearLayout>
