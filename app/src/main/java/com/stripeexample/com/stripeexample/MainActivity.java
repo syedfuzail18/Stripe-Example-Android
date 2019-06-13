@@ -152,6 +152,8 @@ public class MainActivity extends AppCompatActivity {
                                     "Successfull payment",
                                     Toast.LENGTH_SHORT
                             ).show();
+
+                            //here you can call your own api from your server and send the token
                         }
 
                         public void onError(Exception error) {
